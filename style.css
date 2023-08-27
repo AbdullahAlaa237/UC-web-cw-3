@@ -1,6 +1,6 @@
 .b{
 
-    justify-content: center;
+   
 
 display: flex;
     
@@ -8,9 +8,19 @@ display: flex;
     flex-direction: column;
     
     align-items: center;
+    justify-content: center;
 
     }
     
+    @keyframes example {
+        0%   {background-color: red;}
+        25%  {background-color: yellow;}
+        50%  {background-color: blue;}
+        100% {background-color: green;}
+      }
+
+
+
 .box {
 width: 150px;
 
@@ -26,19 +36,31 @@ transition: 0.5s;
 
 border: 2px solid darkkhaki;
 
-display: flex;
-
-justify-content: center;
-
-align-items: center;
+box-shadow: 1px 2px 5px black;
 
 
-flex-wrap: wrap;
+
 
 }
 .box:hover    {
-
+    animation-name: example;
+    animation-duration: 4s;
 background-color: turquoise;
 
 }
+.container {
+width: 600px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
 
+
+}
+
+
+
+
+
+
+  
